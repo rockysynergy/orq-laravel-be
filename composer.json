@@ -1,0 +1,17 @@
+{
+    "name": "orq/laravel-be",
+    "description": "\"The starter backend for laravel apps\"",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rocky Ou",
+            "email": "rockysynergy@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Orq\\LaravelBe\\": "src/"
+        }
+    },
+    "require": {}
+}
