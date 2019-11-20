@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{$siteName ?? '南海青商会'}} - 管理员登录</title>
         <!-- Styles -->
-        <link rel="stylesheet" href="/css/pure-min.css" />
+        <link rel="stylesheet" href="/vendor/OrqStarter/css/pure-min.css" />
         <style>
             body {
                 margin: 0;
                 padding: 0;
-                background: url('/images/banner_01_repeat.png') repeat-x #fff;
+                background: url('/vendor/OrqStarter/images/banner_01_repeat.png') repeat-x #fff;
             }
 
             .container {
@@ -18,7 +18,7 @@
                 min-height: 700px;
                 margin: 0 auto;
                 position: relative;
-                background: url('/images/banner_01.png') no-repeat #transparent;
+                background: url('/vendor/OrqStarter/images/banner_01.png') no-repeat #transparent;
             }
 
             .form-contaner {

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{asset('layui/css/layui.css')}}">
-    <link rel="stylesheet" href="{{asset('css/admin/style.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/OrqStarterlayui/css/layui.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/OrqStartercss/admin/style.css')}}">
     @yield('head')
 </head>
 <body>
@@ -15,8 +15,8 @@
     @yield('body')
 
 
-    <script src="{{asset('/js/jquery-3.4.1.min.js')}}"></script>
-    <script src="{{asset('/layui/layui.js')}}"></script>
+    <script src="{{asset('vendor/OrqStarter/js/jquery-3.4.1.min.js')}}"></script>
+    <script src="{{asset('vendor/OrqStarter/layui/layui.js')}}"></script>
     <script>
         layui.use('element', function(){
           var element = layui.element;
