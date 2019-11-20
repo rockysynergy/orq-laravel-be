@@ -1,9 +1,9 @@
 <?php
 
-namespace Orq\LaravelBe\Controllers;
+namespace Orq\Laravel\Starter\Controllers;
 
 use Illuminate\Http\Request;
-use Orq\LaravelBe\Models\File;
+use Orq\Laravel\Starter\Model\File;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;

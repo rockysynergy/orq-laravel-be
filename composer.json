@@ -1,7 +1,10 @@
 {
-    "name": "orq/laravel-be",
+    "name": "orq/laravel-starter",
     "description": "\"The starter backend for laravel apps\"",
     "license": "MIT",
+    "require": {
+        "spatie/laravel-permission": "^3.2"
+    },
     "authors": [
         {
             "name": "Rocky Ou",
@@ -10,8 +13,18 @@
     ],
     "autoload": {
         "psr-4": {
-            "Orq\\LaravelBe\\": "src/"
+            "Orq\\Laravel\\Starter\\": "src/",
+            "Tests\\": "tests"
         }
     },
-    "require": {}
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Orq\\Laravel\\Starter\\OrqStarterServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0"
+    }
 }
