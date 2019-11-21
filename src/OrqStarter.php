@@ -6,6 +6,16 @@ use Illuminate\Support\Facades\Route;
 
 class OrqStarter
 {
+        /**
+     * Generates login routes
+     */
+    public static function apiLoginRoutes(): void
+    {
+        Route::namespace("\\Orq\\Laravel\\Starter\\Controllers")->group(function () {
+            Route::post('wxlogin', 'AuthController@wxlogin');
+        });
+    }
+
     /**
      * Generates login routes
      */

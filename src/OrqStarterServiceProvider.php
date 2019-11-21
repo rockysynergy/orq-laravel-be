@@ -13,6 +13,7 @@ class OrqStarterServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom(__DIR__.'/../configs/site.config.php', 'site');
     }
 
     /**
@@ -22,6 +23,9 @@ class OrqStarterServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'/../configs/site.config.php' => config_path('site.php'),
+        ], 'configs');
         $this->publishes([
             __DIR__.'/../assets' => public_path('vendor/OrqStarter')
         ], 'assets');
